@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ne|projekt|cz - Ing. Jan Nerad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Space Grotesk', 'monospace'],
+                    },
+                    colors: {
+                        black: '#0a0a0a',
+                        white: '#ffffff',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #0a0a0a; }
+        h1, h2, h3, h4, .font-mono { font-family: 'Space Grotesk', monospace; }
+        html { scroll-behavior: smooth; }
+        /* Technický grid na pozadí hero sekce */
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, #f0f0f0 1px, transparent 1px), linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-black selection:text-white">
+
+    <!-- Navigace (Strohá, oddělená linkou) -->
+    <nav class="bg-white border-b-2 border-black sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo ne|projekt|cz -->
+                <a href="#" class="font-mono text-2xl font-bold tracking-tight uppercase flex items-center gap-1 hover:opacity-70 transition-opacity">
+                    ne<span class="text-gray-300 font-light">|</span>projekt<span class="text-gray-300 font-light">|</span>cz
+                </a>
+                
+                <div class="hidden md:flex items-center space-x-8 font-mono text-sm uppercase tracking-widest">
+                    <a href="#sluzby" class="hover:underline underline-offset-4">Služby</a>
+                    <a href="#profil" class="hover:underline underline-offset-4">Profil</a>
+                    <a href="#kontakt" class="bg-black text-white px-6 py-2 hover:bg-white hover:text-black border-2 border-black transition-colors">
+                        Kontakt
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Sekce (Technický vzhled, grid) -->
+    <section class="relative bg-grid border-b-2 border-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+            <div class="max-w-3xl">
+                <div class="font-mono text-sm uppercase tracking-widest mb-6 border-l-2 border-black pl-4">
+                    Ing. Jan Nerad <br>
+                    Autorizovaný inženýr ČKAIT 012256
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold uppercase leading-none tracking-tight mb-8">
+                    Stavební <br> inženýring. <br> Bez kompromisů.
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-xl">
+                    Precizní projekční práce, nekompromisní technický dozor a tvrdá kontrola rozpočtů. Řídím vaše stavby exaktně a efektivně.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 font-mono uppercase text-sm tracking-wider">
+                    <a href="#kontakt" class="bg-black text-white px-8 py-4 text-center border-2 border-black hover:bg-white hover:text-black transition-colors">
+                        Zahájit projekt
+                    </a>
+                    <a href="#sluzby" class="bg-white text-black px-8 py-4 text-center border-2 border-black hover:bg-gray-100 transition-colors">
+                        Zobrazit služby
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekce Služeb (Ostrý grid) -->
+    <section id="sluzby" class="border-b-2 border-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <h2 class="font-mono text-3xl md:text-4xl font-bold uppercase mb-12">/ Služby</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-0 border-2 border-black">
+                
+                <!-- Služba 01 -->
+                <div class="p-8 md:p-12 border-b-2 md:border-b-0 md:border-r-2 border-black hover:bg-gray-50 transition-colors group">
+                    <div class="font-mono text-4xl text-gray-300 font-bold mb-6 group-hover:text-black transition-colors">01.</div>
+                    <h3 class="font-mono text-2xl font-bold uppercase mb-4">Projekce</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Kompletní projektová dokumentace všech stupňů. Od úvodní studie až po přesný prováděcí detail.
+                    </p>
+                </div>
+
+                <!-- Služba 02 -->
+                <div class="p-8 md:p-12 border-b-2 border-black hover:bg-gray-50 transition-colors group">
+                    <div class="font-mono text-4xl text-gray-300 font-bold mb-6 group-hover:text-black transition-colors">02.</div>
+                    <h3 class="font-mono text-2xl font-bold uppercase mb-4">Technický dozor</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Nezávislá a přísná kontrola provádění stavby. Dohlížím na soulad s projektem, technologické postupy a kvalitu odvedeného díla.
+                    </p>
+                </div>
+
+                <!-- Služba 03 -->
+                <div class="p-8 md:p-12 border-b-2 md:border-b-0 md:border-r-2 border-black hover:bg-gray-50 transition-colors group">
+                    <div class="font-mono text-4xl text-gray-300 font-bold mb-6 group-hover:text-black transition-colors">03.</div>
+                    <h3 class="font-mono text-2xl font-bold uppercase mb-4">Kontrola rozpočtů</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Analýza a optimalizace stavebních nákladů. Kontroluji položkové rozpočty, výkazy výměr a oprávněnost fakturace zhotovitelů.
+                    </p>
+                </div>
+
+                <!-- Služba 04 -->
+                <div class="p-8 md:p-12 hover:bg-gray-50 transition-colors group">
+                    <div class="font-mono text-4xl text-gray-300 font-bold mb-6 group-hover:text-black transition-colors">04.</div>
+                    <h3 class="font-mono text-2xl font-bold uppercase mb-4">Poradenství</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Exaktní posouzení technického stavu nemovitostí před koupí. Řešení technických komplikací a odborné konzultace pro investory.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Profil (Strohý text) -->
+    <section id="profil" class="border-b-2 border-black bg-black text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <div>
+                    <h2 class="font-mono text-3xl md:text-4xl font-bold uppercase mb-6">/ Odborný profil</h2>
+                    <p class="text-lg text-gray-300 mb-6 font-mono border-l-2 border-white pl-4">
+                        IDENTIFIKACE: Ing. Jan Nerad<br>
+                        AUTORIZACE: ČKAIT 012256
+                    </p>
+                </div>
+                <div>
+                    <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                        Jako autorizovaný inženýr přistupuji ke každé zakázce s maximální odpovědností a technickou přesností. Mým primárním úkolem je chránit investici klienta, zajistit technickou správnost díla a dodržení harmonogramu i rozpočtu.
+                    </p>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        Žádné skryté náklady, žádné kompromisy v kvalitě. Jen čisté inženýrské řemeslo a zastupování vašich zájmů na stavbě.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt (Funkční a hranatý) -->
+    <section id="kontakt" class="bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <h2 class="font-mono text-3xl md:text-4xl font-bold uppercase mb-12">/ Kontakt</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-12">
+                <!-- Data -->
+                <div class="lg:col-span-2 space-y-8 font-mono">
+                    <div>
+                        <div class="text-xs uppercase tracking-widest text-gray-500 mb-2">E-mail</div>
+                        <a href="mailto:jan.nerad@gmail.com" class="text-xl font-bold hover:underline">jan.nerad@gmail.com</a>
+                    </div>
+                    <div>
+                        <div class="text-xs uppercase tracking-widest text-gray-500 mb-2">Telefon</div>
+                        <a href="tel:+420774171730" class="text-xl font-bold hover:underline">+420 774 17 17 30</a>
+                    </div>
+                    <div>
+                        <div class="text-xs uppercase tracking-widest text-gray-500 mb-2">Sídlo / Identifikace</div>
+                        <div class="text-lg">
+                            Ing. Jan Nerad<br>
+                            ČKAIT: 012256<br>
+                            IČO: 71726501
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulář -->
+                <div class="lg:col-span-3">
+                    <form class="space-y-6 font-mono" onsubmit="event.preventDefault(); alert('Návrh formuláře. Později bude napojen na Váš e-mail.');">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-xs uppercase tracking-widest text-gray-500 mb-2">Jméno / Firma</label>
+                                <input type="text" id="name" class="w-full bg-transparent border-2 border-black p-4 focus:outline-none focus:bg-gray-50 transition-colors rounded-none" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-xs uppercase tracking-widest text-gray-500 mb-2">E-mail</label>
+                                <input type="email" id="email" class="w-full bg-transparent border-2 border-black p-4 focus:outline-none focus:bg-gray-50 transition-colors rounded-none" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-xs uppercase tracking-widest text-gray-500 mb-2">Předmět / Zpráva</label>
+                            <textarea id="message" rows="5" class="w-full bg-transparent border-2 border-black p-4 focus:outline-none focus:bg-gray-50 transition-colors rounded-none" required></textarea>
+                        </div>
+                        <button type="submit" class="bg-black text-white px-8 py-4 uppercase tracking-widest font-bold border-2 border-black hover:bg-white hover:text-black transition-colors w-full md:w-auto">
+                            Odeslat zprávu
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t-2 border-black bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row justify-between items-center gap-4 font-mono text-sm">
+            <div class="font-bold tracking-tight uppercase">
+                ne<span class="text-gray-400 font-light">|</span>projekt<span class="text-gray-400 font-light">|</span>cz
+            </div>
+            <div class="text-gray-500">
+                &copy; 2026 Ing. Jan Nerad. Všechna práva vyhrazena.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
