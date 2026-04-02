@@ -3,16 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ing. Jan Nerad - Autorizovaný stavební inženýr (ČKAIT 012256). Komplexní projekční práce, nezávislý technický dozor a kontrola stavebních rozpočtů.">
-    <meta name="keywords" content="stavební inženýr, projekční práce, technický dozor, stavební dozor, kontrola rozpočtů, stavební poradenství, ČKAIT">
+    <meta name="description" content="Ing. Jan Nerad - Autorizovaný stavební inženýr. Komplexní projekční práce, nezávislý technický dozor a kontrola stavebních rozpočtů.">
     <meta name="author" content="Ing. Jan Nerad">
     
-    <meta property="og:title" content="ne|projekt|cz">
+    <link rel="canonical" href="https://neprojekt.cz/">
+    
+    <meta property="og:title" content="Ing. Jan Nerad - Stavební inženýr | Projekce & Dozor Praha">
     <meta property="og:description" content="Precizní projekční práce a nekompromisní technický dozor. Řídím vaše stavby exaktně a efektivně.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://neprojekt.cz/">
+    <meta property="og:image" content="https://neprojekt.cz/og-image.jpg">
+    <meta property="og:locale" content="cs_CZ">
     
-    <title>ne|projekt|cz</title>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ing. Jan Nerad - Stavební inženýr | Projekce & Dozor Praha">
+    <meta name="twitter:description" content="Precizní projekční práce a nekompromisní technický dozor. Řídím vaše stavby exaktně a efektivně.">
+    <meta name="twitter:image" content="https://neprojekt.cz/og-image.jpg">
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <title>Ing. Jan Nerad - Stavební inženýr | Projekce & Dozor Praha</title>
+    
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
@@ -36,20 +56,85 @@
         body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #0a0a0a; }
         h1, h2, h3, h4, .font-mono { font-family: 'Space Grotesk', monospace; }
         html { scroll-behavior: smooth; }
-        /* Technický grid na pozadí hero sekce */
         .bg-grid {
             background-size: 40px 40px;
             background-image: linear-gradient(to right, #f0f0f0 1px, transparent 1px), linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
         }
     </style>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "ne|projekt|cz - Ing. Jan Nerad",
+        "description": "Autorizovaný stavební inženýr poskytující projekční práce, technický dozor, kontrolu rozpočtů a stavební poradenství.",
+        "url": "https://neprojekt.cz/",
+        "telephone": "+420774171730",
+        "email": "jan.nerad@neprojekt.cz",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Praha",
+            "addressCountry": "CZ"
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "Ing. Jan Nerad",
+            "jobTitle": "Autorizovaný stavební inženýr",
+            "telephone": "+420774171730",
+            "email": "jan.nerad@neprojekt.cz"
+        },
+        "taxID": "71726501",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Česká republika"
+        },
+        "priceRange": "$$",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Služby",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Projekce",
+                        "description": "Kompletní projektová dokumentace všech stupňů. Od úvodní studie až po přesný prováděcí detail."
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Technický dozor",
+                        "description": "Nezávislá a přísná kontrola provádění stavby. Dohlížím na soulad s projektem, technologické postupy a kvalitu odvedeného díla."
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Kontrola rozpočtů",
+                        "description": "Analýza a optimalizace stavebních nákladů. Kontroluji položkové rozpočty, výkazy výměr a oprávněnost fakturace zhotovitelů."
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Poradenství",
+                        "description": "Exaktní posouzení technického stavu nemovitostí před koupí. Řešení technických komplikací a odborné konzultace pro investory."
+                    }
+                }
+            ]
+        }
+    }
+    </script>
 </head>
 <body class="antialiased selection:bg-black selection:text-white">
 
-    <!-- Navigace (Strohá, oddělená linkou) -->
     <nav class="bg-white border-b-2 border-black sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <!-- Logo ne|projekt|cz -->
                 <a href="#" class="font-mono text-2xl font-bold tracking-tight uppercase flex items-center gap-1 hover:opacity-70 transition-opacity">
                     ne<span class="text-gray-300 font-light">|</span>projekt<span class="text-gray-300 font-light">|</span>cz
                 </a>
@@ -65,7 +150,6 @@
         </div>
     </nav>
 
-    <!-- Hero Sekce (Technický vzhled, grid) -->
     <section class="relative bg-grid border-b-2 border-black">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
             <div class="max-w-3xl">
@@ -77,7 +161,7 @@
                     Stavební <br> inženýring. <br> Bez kompromisů.
                 </h1>
                 <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-xl">
-                    Precizní projekční práce, nekompromisní technický dozor a tvrdá kontrola rozpočtů. Řídím vaše stavby exaktně a efektivně.
+                    Projekční práce, technický dozor a kontrola rozpočtů. Řídím vaše stavby precizně a efektivně.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 font-mono uppercase text-sm tracking-wider">
                     <a href="#kontakt" class="bg-black text-white px-8 py-4 text-center border-2 border-black hover:bg-white hover:text-black transition-colors">
@@ -91,14 +175,12 @@
         </div>
     </section>
 
-    <!-- Sekce Služeb (Ostrý grid) -->
     <section id="sluzby" class="border-b-2 border-black">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
             <h2 class="font-mono text-3xl md:text-4xl font-bold uppercase mb-12">/ Služby</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-0 border-2 border-black">
                 
-                <!-- Služba 01 -->
                 <div class="p-8 md:p-12 border-b-2 md:border-b-0 md:border-r-2 border-black hover:bg-gray-50 transition-colors group">
                     <div class="font-mono text-4xl text-gray-300 font-bold mb-6 group-hover:text-black transition-colors">01.</div>
                     <h3 class="font-mono text-2xl font-bold uppercase mb-4">Projekce</h3>
@@ -107,7 +189,6 @@
                     </p>
                 </div>
 
-                <!-- Služba 02 -->
                 <div class="p-8 md:p-12 border-b-2 border-black hover:bg-gray-50 transition-colors group">
                     <div class="font-mono text-4xl text-gray-300 font-bold mb-6 group-hover:text-black transition-colors">02.</div>
                     <h3 class="font-mono text-2xl font-bold uppercase mb-4">Technický dozor</h3>
@@ -116,7 +197,6 @@
                     </p>
                 </div>
 
-                <!-- Služba 03 -->
                 <div class="p-8 md:p-12 border-b-2 md:border-b-0 md:border-r-2 border-black hover:bg-gray-50 transition-colors group">
                     <div class="font-mono text-4xl text-gray-300 font-bold mb-6 group-hover:text-black transition-colors">03.</div>
                     <h3 class="font-mono text-2xl font-bold uppercase mb-4">Kontrola rozpočtů</h3>
@@ -125,7 +205,6 @@
                     </p>
                 </div>
 
-                <!-- Služba 04 -->
                 <div class="p-8 md:p-12 hover:bg-gray-50 transition-colors group">
                     <div class="font-mono text-4xl text-gray-300 font-bold mb-6 group-hover:text-black transition-colors">04.</div>
                     <h3 class="font-mono text-2xl font-bold uppercase mb-4">Poradenství</h3>
@@ -138,7 +217,6 @@
         </div>
     </section>
 
-    <!-- Profil (Strohý text) -->
     <section id="profil" class="border-b-2 border-black bg-black text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -161,13 +239,11 @@
         </div>
     </section>
 
-    <!-- Kontakt (Funkční a hranatý) -->
     <section id="kontakt" class="bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
             <h2 class="font-mono text-3xl md:text-4xl font-bold uppercase mb-12">/ Kontakt</h2>
             
             <div class="grid grid-cols-1 lg:grid-cols-5 gap-12">
-                <!-- Data -->
                 <div class="lg:col-span-2 space-y-8 font-mono">
                     <div>
                         <div class="text-xs uppercase tracking-widest text-gray-500 mb-2">E-mail</div>
@@ -213,7 +289,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="border-t-2 border-black bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row justify-between items-center gap-4 font-mono text-sm">
             <div class="font-bold tracking-tight uppercase">
